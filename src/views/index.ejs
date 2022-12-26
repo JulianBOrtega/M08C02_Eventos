@@ -5,11 +5,21 @@
     <link rel='stylesheet' href='/css/style.css' />
   </head>
   <body>
-    <figure>
-      <img src="/img/logo-DH.png" alt="Logo Digital House">
+    <figure style="display: flex; gap: 5px;">
+      <img src="/img/logo-DH.png" alt="Logo Digital House" onclick="toggleMenu()" style="cursor:pointer">
+      <ul id="menu" class="hiddenElement">
+          <li><a href="https://youtu.be/uCGD9dT12C0">Tell me lies~</a></li>
+          <li><a href="https://youtu.be/uCGD9dT12C0">Tell me sweet little lies</a></li>
+          <li><a href="https://youtu.be/uCGD9dT12C0">Tell me lies</a></li>
+          <li><a href="https://youtu.be/uCGD9dT12C0">Tell me sweet little lies~</a></li>
+        </ul>
     </figure>
+    
+    
+    
     <h1><%= title %></h1>
     <p>Bienvenidos a <%= title %></p>
     <p><a href="/movies">Listado de Películas</a></p>
   </body>
 </html>
+<script src="/js/index.js"></script>

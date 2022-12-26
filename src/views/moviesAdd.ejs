@@ -12,12 +12,12 @@
     <figure>
         <img src="/img/logo-DH.png" alt="Logo Digital House">
       </figure>
-    <h1 class="titulo">Agregar Película</h1>
+    <h1 id="colorThingy" class="titulo" onmouseenter="changeColor()">Agregar Película</h1>
     <br>
     <section class="formulario">
         <form action="/movies/create" method="POST">
             <label for="title">Titulo </label>
-            <p><input type="text" name="title" id="" required></p>
+            <p><input type="text" name="title" id="titleInput" required></p>
             <label for="rating">Calificación </label>
             <p><input type="number" name="rating" id="" required> </p>
             <label for="awards">Premios </label>
@@ -45,3 +45,6 @@
 </body>
 
 </html>
+
+<script src="/js/moviesAdd.js"></script>
+<script src="/js/secret.js"></script>
